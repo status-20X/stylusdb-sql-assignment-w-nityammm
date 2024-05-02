@@ -1,9 +1,9 @@
-const readCSV = require('../../src/csvReader');
-const parseQuery = require('../../src/queryParser');
-const executeSELECTQuery = require('../../src/index');
+const readCSV = require('/Users/nitya/github-classroom/status-20X/stylusdb-sql-assignment-w-nityammm/src/csvReader.js');
+const parseQuery = require('/Users/nitya/github-classroom/status-20X/stylusdb-sql-assignment-w-nityammm/src/queryParser.js');
+const executeSELECTQuery = require('/Users/nitya/github-classroom/status-20X/stylusdb-sql-assignment-w-nityammm/src/index.js');
 
 test('Read CSV File', async () => {
-    const data = await readCSV('./sample.csv');
+    const data = await readCSV('tests/step-02/sample.csv');
     expect(data.length).toBeGreaterThan(0);
     expect(data.length).toBe(3);
     expect(data[0].name).toBe('John');
